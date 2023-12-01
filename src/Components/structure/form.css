@@ -1,0 +1,172 @@
+.slide-form {
+    background-color: antiquewhite;
+    padding: 3rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color:#0c0b0b
+  }
+  
+  label {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  input{
+    padding: 0.51rem;
+  }
+  
+  select{
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  .radio-label{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  input[type='radio'] {
+    appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #5e0707;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  input[type='radio']:checked {
+    background-color: #5e0707;
+  }
+
+  button{
+    background-color: #5e0707;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  button.selected {
+    background-color: #000;
+    transition: background-color 0.3s ease;
+    margin-right: 1rem;
+  }
+
+  #bed-btn{
+    margin-right: 1rem;
+  }
+  
+  button:hover {
+    background-color: #6d6161;
+  }
+  
+  /* Add styling for the Reset button */
+  button[type='reset'] {
+    background-color: #ccc;
+    color: #000;
+    margin-top: 0.5rem;
+  }
+  
+  button[type='reset']:hover {
+    background-color: #bbb;
+  }
+
+.apply{
+  padding: 1rem;
+  font-size: 0.81rem;
+  width: 30%;
+  margin-right: 2rem;
+}
+
+  .slide-form {
+    background-color: antiquewhite;
+    padding: 3rem;
+    padding-top: 1.2rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    right: -100%; /* Initially off-screen to the right */
+    top: 0;
+    height: 100%;
+    transition: right 1s ease; /* Add transition for smooth effect */
+    z-index: 1;
+    overflow-y: auto; /* Add a vertical scrollbar when content overflows*/
+  }
+
+  .slide-form::-webkit-scrollbar {
+    width: 12px;
+    background-color: #5e0707;
+  }
+  
+
+  .filter-top{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem
+  }
+
+  .close{
+    color: #5e0707;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+
+  .slide-form::-webkit-scrollbar-thumb {
+    background-color: #5e0707;
+  }
+  /* Add a class to slide the form in */
+  .slide-form.active {
+    right: 0;
+  }
+
+  @media (max-width: 1100px) {
+    .slide-form{
+      width: 40%;
+      gap: 1rem;
+      padding: 1.3rem 3rem;
+    }
+
+  }
+
+  @media (max-width: 770px) {
+    .slide-form{
+      width: 100%;
+      gap: 1rem;
+      padding: 1.3rem 3rem;
+    }
+
+    .radio-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    label {
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+  
+
+    input{
+      padding: 1.01rem;
+    }
+  }

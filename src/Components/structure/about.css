@@ -1,0 +1,365 @@
+/******About Page**********/
+
+.about{
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+  }
+  
+  .image-box {
+    position: relative;
+    height: 47rem;
+    margin-bottom: 8rem;
+    width: 100%;
+  }
+  
+  .image-box img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: white;
+    color: #880808;
+    padding: 2rem;
+    height: 50%;
+    overflow: auto;
+  }
+  
+  .text-overlay h2 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  
+  .text-overlay p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    text-transform: none;
+  }
+  
+  .about2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .about2 .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5.6rem 2rem;
+    background-color:  rgba(211, 26, 26, 0.2);
+    width: 50%;
+    height: 35rem;
+  }
+  
+  .about2 .content button{
+    width: 10rem;
+    padding: 0.5rem;
+    border: 0.2rem solid #880808;
+    background: transparent;
+    color: #880808;
+  }
+  
+  .about2 .content button:hover{
+    background: #880808;
+    color:#fff;
+    transition: 1s;
+  }
+  
+  .about2 .image-boxxx{
+    width: 50%;
+    height: 35rem;
+  }
+  
+  .about2 .image-boxxx img{
+    width:100%;
+    height: 35rem;
+  }
+  
+  .about2 .content h2 {
+    text-transform: none;
+    margin-left: 0;
+  }
+  
+  .about2 .content p {
+    color: #880808;
+    font-size: 1.2rem;
+    text-transform: none;
+  }
+  
+  
+  .about-management{
+    margin-top: 10rem;
+  }
+  
+  .management-box {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between;
+    padding: 2%;
+    max-width: 100%; /* Set maximum width to 100% of the parent container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  
+  .m-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2%;
+    padding: 2rem 1.6rem;
+    background-color: #eee;
+  }
+  
+  
+  
+  .m-box .desc .grade{
+    background-color: rgba(243, 120, 120, 0.2);
+    padding:  0.5rem;
+    color: #880808;
+    font-weight: bold;
+    width: 9rem;
+  }
+  
+  .m-box .desc p{
+    margin: 0.5rem 0;
+    color: #880808;
+  }
+  
+  .m-box .desc h3{
+    margin: 0.5rem 0;
+    color: #880808;
+  }
+  
+  .image-cards .image {
+    max-width: 17rem; /* Set a fixed width for the images */
+    height: 20rem; /* Set a fixed height for the images */
+    text-align: center; /* Center the image within the container */
+    overflow: hidden; /* Hide any overflow beyond the specified width and height */
+  }
+  
+  .image-cards .image img {
+    max-width: 100%; /* Ensure the image does not exceed the width of its container */
+    height: 100%; /* Ensure the image does not exceed the height of its container */
+    object-fit: cover; /* Scale the image, while maintaining its aspect ratio, to cover the entire container */
+  }
+  
+  
+  .freq-asked{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+    margin-bottom: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top: 0.16rem solid rgba(252, 83, 83, 0.3);
+  }
+  
+  .freq-asked .fa-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  flex: 1;
+  }
+  
+  .freq-asked .fa-cont h3{
+    font-size: 2rem;
+    color: #880808;
+    font-weight: bolder;
+  }
+  
+  .faq {
+    width: 100%;
+    flex: 1;
+  }
+  
+  .freq-asked .fa-cont p {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.5;
+    color: #d22b2b;
+  }
+  
+  .accordion {
+    background-color: #fff;
+    color: #880808;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 540;
+    border-bottom: 1px solid rgba(252, 83, 83, 0.2);
+    font-size: 1.4rem;
+  
+  }
+  
+  .activee,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #830d0d;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .panel {
+    background-color: white;
+    display:none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .activated{
+    display: block;
+  }
+  
+  .panel p {
+    padding: 1rem;
+    color: #d22b2b;
+    line-height: 1.5;
+  }
+  
+  
+  
+  @media (max-width:770px) {
+    .about{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about .image-box {
+         height: 40rem;
+    }
+    
+    .about .image-box img {
+        max-height: 100%;
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    
+    
+    .text-overlay h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .text-overlay p {
+        font-size: 1rem;
+    }
+    .about2{
+        flex-direction: column;
+    }
+    
+    .about2 .content{
+        width: 100%;
+        max-height: 36rem;
+    }
+    
+    .about2 .image-boxxx{
+        width: 100%;
+        max-height: 36rem;
+    }
+    
+    .about2 .image-box img{
+        width: 35rem;
+        height: 33rem;
+    }
+  
+    .management-box{
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 3rem;
+       
+    }
+  
+    .image-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 14%;
+    }
+  
+    .image-cards .image{
+        max-width: 18rem;
+    }
+  }
+  @media (max-width:455px) {
+    .about{
+        margin-top: 9rem;
+    }
+    .about .image-box {
+        max-height: 28rem;
+        width: 100%;
+    }
+    
+    .about2 .content{
+        width: 100%;
+        height: fit-content;
+        overflow: scroll;
+    }
+    
+    .text-overlay {
+        top: 30%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        gap: 0.5rem;
+        padding: 1rem;
+        margin-top: 4rem;
+        width: 20rem;
+        height: 20rem
+    }
+  
+    .about2 .content{
+        height: 45rem;
+    }
+    
+    .about2 .image-boxxx{
+        height: 35rem;
+    }
+  
+    .image-cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+    /*FAQ*/
+    .freq-asked{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-between;
+        margin: 5rem 0;
+        margin-bottom: 0;
+        padding-top: 1.3rem;
+        padding-left: 0.2rem;
+        padding-right: 0.22rem;
+        border-top: 0.16rem solid rgba(252, 83, 83, 0.3);
+    }
+
+    .freq-asked .fa-cont h3{
+        font-size: 1.5rem;
+        color: #880808;
+        font-weight: bolder;
+      }
+
+  }
+  

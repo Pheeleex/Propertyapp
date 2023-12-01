@@ -1,0 +1,111 @@
+.nav {
+    display: flex;
+    background-color: #fff;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  img{
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    color: #880808;
+    text-transform: capitalize;
+  }
+  
+  .logo .bi {
+    margin-right: 18px;
+    font-size: 3rem;
+  }
+  
+  .logo a {
+    color: #880808;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #menu-bar {
+    display: none;
+    margin-right: 20px;
+    font-weight: bolder;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 2rem;
+  }
+  
+  .nav-links ul li .a {
+    color: #880808;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .nav-links ul li .a:hover {
+    color: rgba(243, 66, 66, 0.2);
+  }
+
+  .nav-links ul li .a.active{
+  background-color: #880808;
+  color: #fff;
+  padding: 9px;
+  border-radius: 4px;
+}
+  
+  @media (max-width: 771px) {
+    .nav #menu-bar {
+      display: inline-block;
+    }
+  
+    .navLinks {
+      position: absolute;
+      top: 18%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+      padding: 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      z-index: 2;
+    }
+  
+    .navLinks.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  
+    .navLinks ul {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .navLinks a {
+      display: block;
+      padding: 1.5rem;
+      margin: 1rem;
+      font-size: 2rem;
+      background: #eee;
+      border-radius: 6px;
+    }
+  
+    .navLinks ul li a:hover {
+      color: black;
+    }
+  
+    .navLinks ul li:hover a::after {
+      width: 0%;
+    }
+  }
