@@ -9,11 +9,11 @@ import {Route,
 
 /*Import Pages*/
 import About from './Components/Pages/Aboutpage/About';
-import Home from './Components/Pages/Home';
-import Contact from './Components/Pages/Contact';
-import Properties from './Components/Pages/properties';
+import Home from './Components/Pages/HomePage/Home';
+import Contact from './Components/Pages/Contact/Contact';
+import Properties from './Components/Pages/Properties/properties';
 import RootLayout from './Layout/RootLayout';
-import Property from './Components/Pages/Property';
+import Property from './Components/Pages/Properties/Property';
 import propertiesLoader from './Components/Config/Loaders/propertiesLoader';
 import NotFound from './Components/Pages/NotFound';
 import { propertyLoader } from './Components/Config/Loaders/propertyLoader';

@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    background-color: antiquewhite;
   }
   
   .propertyContact  .contact-form h2 {
@@ -32,10 +33,6 @@
     padding: 3%;
   }
   
-  .forms:nth-child(3),
-  .forms:nth-child(4) {
-    grid-column: span 2;
-  }
   
   .contact-form input,
   textarea {
@@ -86,6 +83,11 @@
       width: 100%;
     }
 
+    .propertyContact .contact-form .grid-form{
+      display: flex;
+      flex-direction: column;
+    }
+
     .propertyContact {
         margin: 2% 0%;
       }
@@ -95,7 +97,7 @@
         width: 100%;
       }
      
-  .grid-form {
+ .propertyContact .grid-form {
     display: flex;
     flex-direction: column;
     padding: 7%;
@@ -105,6 +107,11 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+  }
+
+  
+  .propertyContact .grid-form {
+    grid-template-columns: 1fr; /* Change this to one column for smaller screens */
   }
   }
   

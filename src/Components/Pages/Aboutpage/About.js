@@ -1,9 +1,9 @@
 import React from 'react'
 import manor from '../../Images/About-Images/manor.jpg'
 import About2 from './About2';
-import ManagementSection from '../ManagementSection';
+import ManagementSection from './ManagementSection'
 import Accordion from './Faq';
-import "../../structure/about.css"
+import "./about.css"
 
 const About = () => {
   return (

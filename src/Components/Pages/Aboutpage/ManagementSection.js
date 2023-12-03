@@ -1,6 +1,6 @@
 import React from 'react';
-import ManagementCard from '../structure/managementCard';
-import managementData from '../structure/managmentData'; // Import the data file
+import ManagementCard from './managementCard'
+import managementData from  './managmentData'
 
 const ManagementSection = () => {
   return (

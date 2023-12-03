@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import FilterForm from '../Forms/FilterForm';
+import FilterForm from '../../Forms/FilterForm';
 //import useGetProperties from '../Hooks/useGetProperties';
-import Product from '../Images/Properties/manor2.jpg';
+import Product from '../../Images/Properties/manor2.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import { Link, NavLink, useLoaderData } from 'react-router-dom';
-import SearchBar from '../structure/SearchBar';
+import { Link, useLoaderData } from 'react-router-dom';
+import SearchBar from '../../structure/SearchBar';
 import { motion } from 'framer-motion';
-import "../structure/properties.css"
+import "./properties.css"
 
 const Properties = () => {
   const propertiesWithImages = useLoaderData();

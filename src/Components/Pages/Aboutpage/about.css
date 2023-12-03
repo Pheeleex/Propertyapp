@@ -100,6 +100,10 @@
   .about-management{
     margin-top: 10rem;
   }
+
+  .about-management .service-head{
+    margin-left: 1rem;
+  }
   
   .management-box {
     display: flex;
@@ -271,6 +275,7 @@
     .about2 .content{
         width: 100%;
         max-height: 36rem;
+        padding: 2rem;
     }
     
     .about2 .image-boxxx{
@@ -302,7 +307,7 @@
         max-width: 18rem;
     }
   }
-  @media (max-width:455px) {
+  @media (max-width:575px) {
     .about{
         margin-top: 9rem;
     }
@@ -313,8 +318,7 @@
     
     .about2 .content{
         width: 100%;
-        height: fit-content;
-        overflow: scroll;
+       height: fit-content;
     }
     
     .text-overlay {
@@ -329,7 +333,8 @@
     }
   
     .about2 .content{
-        height: 45rem;
+        max-height: 55rem;
+        padding: 1.5rem;
     }
     
     .about2 .image-boxxx{

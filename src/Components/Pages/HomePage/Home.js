@@ -3,24 +3,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 //import { EffectFade } from 'swiper/modules';
 import 'swiper/css';
-import { motion, useScroll } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 
 import 'swiper/swiper-bundle.css'
-import build1 from '../Images/home-images/build1.jpeg';
-import build2 from '../Images/home-images/build2.jpeg';
-import build3 from '../Images/home-images/build4.jpeg';
-import ServicesSection from './ServicesSection';
+import build1 from '../../Images/home-images/build1.jpeg';
+import build2 from '../../Images/home-images/build2.jpeg';
+import build3 from '../../Images/home-images/build4.jpeg';
+import ServicesSection from './ServicesSection'
 import PortfolioSection from './portfolio';
 import Review from './Review';
-import { useState } from 'react';
 
 const Home = () => {
-    const contentImages = [build1, build2, build3];
-    const [scrollIn, setScrollIn] = useState(false)
-
-    
-   
+    const contentImages = [build1, build2, build3];   
     return (
         <section className="home" id="indie">
             <div  className="slide">      

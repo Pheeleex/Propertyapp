@@ -38,6 +38,7 @@ const FilterForm = ({ onFilterChange, isActive, close }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     handleFilter(); // Call your filter logic here
+    close()
   };
 
   return (

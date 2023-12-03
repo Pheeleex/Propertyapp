@@ -1,6 +1,6 @@
-import staff1 from '../Images/About-Images/review1.jpg'
-import staff2 from '../Images/About-Images/review2.jpg'
-import staff3 from '../Images/About-Images/pic1.jpg'
+import staff1 from '../../Images/About-Images/review1.jpg'
+import staff2 from '../../Images/About-Images/review2.jpg'
+import staff3 from '../../Images/About-Images/pic1.jpg'
 const managementData = [
     {
       imageSrc: staff1,

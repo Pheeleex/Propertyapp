@@ -1,8 +1,8 @@
 import React from 'react';
-import PortfolioItem from '../structure/portfolioItem';
-import build1 from '../Images/home-images/build1.jpeg';
-import build2 from '../Images/home-images/build2.jpeg';
-import build3 from '../Images/home-images/build4.jpeg';
+import PortfolioItem from './portfolioItem';
+import build1 from '../../Images/home-images/build1.jpeg';
+import build2 from '../../Images/home-images/build2.jpeg';
+import build3 from '../../Images/home-images/build4.jpeg';
 
 import { motion } from "framer-motion"
 

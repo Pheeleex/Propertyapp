@@ -1,5 +1,4 @@
 import { doc, getDoc } from "firebase/firestore";
-import Property from "../../Pages/Property";
 import { db, storage } from "../Firebase";
 import { getDownloadURL, listAll, ref } from "firebase/storage";
 export const propertyLoader = async ({ params }) => {

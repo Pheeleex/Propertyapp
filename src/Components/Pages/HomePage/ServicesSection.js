@@ -26,7 +26,7 @@ const ServicesSection = () => {
     <section className="services">
       <motion.h2
         intial={{x: 20}}
-        whileInView={{ x: [100, 0]}}
+        whileInView={{ x: [100, -40]}}
         transition={{duration: 2}}
         className="service-head">Our Services</motion.h2>
       <motion.div

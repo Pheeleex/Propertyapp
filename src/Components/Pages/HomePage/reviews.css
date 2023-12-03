@@ -99,11 +99,11 @@
     @media (max-width: 450px) {
         .reviews .review-container{
             flex-direction: column;
-            max-height: 66rem;
+            max-height: 67rem;
         } 
 
         .review-container .sample{
-            max-height: 36rem;
+            max-height: 38rem;
         }
 
         .review{

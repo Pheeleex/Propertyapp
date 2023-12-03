@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
-import "../structure/reviews.css"
+import { Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import "./reviews.css"
 import { motion } from 'framer-motion';
 
 const Review = () => {
@@ -10,7 +10,7 @@ const Review = () => {
       <section className="reviews">
         <motion.h2 
             intial={{x: 0}}
-            whileInView={{ x: [180, 90, 45, 0]}}
+            whileInView={{ x: [180, 90, 45, -15]}}
             transition={{duration: 2}}
           className="service-head">Reviews</motion.h2>
         <div className="review-container">

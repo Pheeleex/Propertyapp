@@ -1,16 +1,14 @@
 import React from 'react'
 import { useParams, useLoaderData } from 'react-router-dom'
-
-import "../structure/property.css"
+import "./property.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import PropertyContact from './propertyContact';
 
 
 
 
 const Property = () => {
-  const { propertyId } = useParams();
   const property = useLoaderData();
   
 
@@ -29,7 +27,7 @@ const Property = () => {
           >
           {property.images.map((imageUrl, index) => (
             <SwiperSlide key={index}>
-                 <img key={index} src={imageUrl} alt={`Image ${index + 1}`} />
+                 <img key={index} src={imageUrl} alt={`Property ${index + 1}`} />
             </SwiperSlide>
             
           ))}
