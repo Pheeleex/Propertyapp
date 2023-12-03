@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, useLoaderData } from 'react-router-dom'
+import { useLoaderData } from 'react-router-dom'
 import "./property.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';

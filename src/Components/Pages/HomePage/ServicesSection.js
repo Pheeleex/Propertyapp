@@ -3,6 +3,7 @@ import ServiceCard from './serviceCard';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
+
 const servicesData = [
   {
     title: 'Buy/Sell',
@@ -35,23 +36,24 @@ const ServicesSection = () => {
           transition={{duration: 2}}
         className="line"></motion.div>
         <h3 className='head'>Discover unparalleled property solutions with our dynamic property development firm</h3>
-      <TypeAnimation
-       style={{ whiteSpace: 'pre-line', height: '115px', display: 'block', color: 'brown' }}
-  sequence={[
-    // Same substring at the start will only be typed once, initially
-    `We buy.`,
-    1000,
-    `We sell.`,
-    1000,
-    `We develop.`,
-    1000,
-    `We invest.`,
-    1000
-  ]}
-  wrapper='h3'
-  className='head'
-  speed={50}
-  repeat={Infinity} />
+        <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'We Sell',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'We Buy',
+        1000,
+        'We Rent',
+        1000,
+        'We Develop',
+        1000
+      ]}
+      wrapper="h3"
+      className='head'
+      speed={50}
+      style={{ fontSize: '2em', display: 'inline-block', color:'brown' }}
+      repeat={Infinity}
+    />
 
       <div className="cards-container">
         {servicesData.map((service, index) => (

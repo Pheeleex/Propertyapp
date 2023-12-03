@@ -47,7 +47,7 @@ const Properties = () => {
     <div>
       <section className="products">
         <div className="image-box">
-          <img src={Product} alt="Product Image" className="image" />
+          <img src={Product} alt="Product" className="image" />
 
           <div className="text-overlay">
             <h2>Our Current Products</h2>

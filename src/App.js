@@ -9,7 +9,7 @@ import {Route,
 
 /*Import Pages*/
 import About from './Components/Pages/Aboutpage/About';
-import Home from './Components/Pages/HomePage/Home';
+import Home from './Components/Pages/HomePage/Home'
 import Contact from './Components/Pages/Contact/Contact';
 import Properties from './Components/Pages/Properties/properties';
 import RootLayout from './Layout/RootLayout';

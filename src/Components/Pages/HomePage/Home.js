@@ -5,7 +5,7 @@ import { Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
-
+import TypeAnimation from 'react-type-animation'
 import 'swiper/swiper-bundle.css'
 import build1 from '../../Images/home-images/build1.jpeg';
 import build2 from '../../Images/home-images/build2.jpeg';
