@@ -48,10 +48,10 @@ const ServicesSection = () => {
         'We Develop',
         1000
       ]}
-      wrapper="h3"
+      wrapper="p"
       className='head'
       speed={50}
-      style={{ fontSize: '2em', display: 'inline-block', color:'brown' }}
+      style={{ fontSize: '2em', display: 'inline-block', color:'brown', height: '100px' }}
       repeat={Infinity}
     />
 
